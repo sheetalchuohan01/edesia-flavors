@@ -1,0 +1,5 @@
+{
+  "name": "Edesia - Global Buffet Dining",
+  "description": "Premium buffet restaurant at Crowne Plaza Hotel, Okhla. Experience a celebration of global flavors with live cooking stations and elegant ambience.",
+  "requestFramePermissions": ["geolocation"]
+}

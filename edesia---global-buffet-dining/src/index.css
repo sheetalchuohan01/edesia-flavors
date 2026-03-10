@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Schibsted+Grotesk:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Antonio", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-brand-primary: #3A2A1D;
+  --color-brand-accent: #C9A45C;
+  --color-brand-bg: #F6F2EA;
+  --color-brand-text: #2B1F16;
+  --color-brand-muted: #4A4A4A;
+  --color-brand-beige: #EFE6D9;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-tight;
+  }
+}
+
+.cursive {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.glass-card {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.btn-primary {
+  @apply bg-brand-primary text-white px-8 py-3 rounded-full font-display uppercase tracking-widest transition-all hover:bg-brand-accent hover:scale-105 active:scale-95;
+}
+
+.btn-outline {
+  @apply border-2 border-brand-primary text-brand-primary px-8 py-3 rounded-full font-display uppercase tracking-widest transition-all hover:bg-brand-primary hover:text-white;
+}
